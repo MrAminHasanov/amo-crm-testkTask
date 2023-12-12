@@ -1,0 +1,25 @@
+@import "../Footer.module.scss";
+
+.menuList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    grid-area: menuList;
+
+    @media only screen and (max-width:1000px) {
+        justify-content: none;
+        width: 500px;
+    }
+
+    @media only screen and (max-width:580px) {
+        width: 100%;
+
+        &>li:last-child ul{
+            text-align: right;
+        }
+    }
+
+    &__listHead {
+        @extend .listHead
+    }
+}

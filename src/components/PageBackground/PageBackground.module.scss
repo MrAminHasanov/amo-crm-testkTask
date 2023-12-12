@@ -1,0 +1,93 @@
+.pageBackground {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E1014;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+
+    &__shine {
+        width: 331px;
+        height: 331px;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 16%;
+
+        &_leftRed {
+            background: rgb(124, 22, 22, 1);
+            top: 28%;
+            left: -17%;
+            box-shadow: 1px -11px 142px 128px rgba(124, 22, 22, 1);
+        }
+        &_topCenterPurple {
+            background: #833AB4;
+            top: -35%;
+            left: 40%;
+            box-shadow: 1px -11px 142px 128px #833AB4;
+        }
+    }
+
+
+    &__ball{
+        position: absolute;
+        border-radius: 50%;
+        &_bigRed {
+            background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+            width: 83px;
+            height: 83px;
+            left: 36%;
+            top: 72px;
+            box-shadow: 3px 6px 27px -10px #DF7D7D40;
+        }
+    
+        &_purple {
+            background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+            box-shadow: 3px 6px 27px -10px #B176D940;
+            width: 60px;
+            height: 60px;
+            left: 60%;
+            z-index: -2;
+            filter: blur(3px);
+        }
+    
+        &_smallRed {
+            width: 28px;
+            height: 28px;
+            background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+            box-shadow: 3px 6px 27px -10px #DF7D7D40;
+            left: 60%;
+            top: 70%;
+            filter: blur(3px);
+        }
+    }
+    @media only screen and (max-width:660px){
+        filter: blur(5px);
+        &__ball{
+            &_bigRed{
+                display: none;
+            }
+            &_smallRed{
+                width: 60px;
+                height: 60px;
+                top: 70%;
+                left: 30px;
+            }
+            &_purple{
+                width: 60px;
+                height: 60px;
+                top: 250px;
+                left: 90%;
+            }
+        }
+        &__shine{
+            &_leftRed{
+                left: -30px;
+            }
+            &_topCenterPurple{
+                left: 380px;
+                top: 20%;
+            }
+        }
+    }
+}

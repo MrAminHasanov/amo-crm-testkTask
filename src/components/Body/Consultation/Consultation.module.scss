@@ -1,0 +1,148 @@
+.consultation {
+    text-align: right;
+
+    &__title {
+        font-size: 18px;
+        font-family: "inter";
+        font-weight: 400;
+        color: var(--lightGrey);
+        background: linear-gradient(to right, #FCB045, #FD1D1D);
+        background-clip: text;
+
+        &_orange {
+            font-weight: 700;
+            color: transparent;
+            text-transform: uppercase;
+        }
+    }
+
+    &__btn {
+        background-color: #4077F3;
+        color: var(--lightGrey);
+        border: none;
+        padding: 20px 40px;
+        font-family: "inter";
+        font-weight: 500;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 330px;
+        padding: 28px 0px;
+    }
+
+    &__box {
+        padding: 7px 0px;
+        display: block;
+        width: 50%;
+
+        &Title {
+            font-size: 18px;
+            font-family: "inter";
+            font-weight: 400;
+            color: var(--lightGrey);
+        }
+
+        &Text {
+            padding-top: 8px;
+            font-size: 16px;
+            font-family: "Montserrat";
+            font-weight: 200;
+            color: var(--lightGrey);
+        }
+    }
+
+    @media only screen and (max-width:900px) {
+        &__list {
+            width: 270px;
+            padding: 20px 0px;
+        }
+
+        &__box {
+            &Title {
+                font-size: 16px;
+            }
+
+            &Text {
+                font-size: 13px;
+            }
+        }
+
+        &__btn {
+            padding: 10px 20px;
+        }
+    }
+
+    @media only screen and (max-width:700px) {
+        &__list {
+            width: 220px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__box {
+            &Title {
+                font-size: 12px;
+            }
+
+            &Text {
+                font-size: 10px;
+            }
+        }
+
+        &__btn {
+            font-size: 12px;
+            padding: 6px 16px;
+        }
+    }
+
+    @media only screen and (max-width:660px) {
+        text-align: left;
+
+        &__list{
+            width: 300px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__box {
+            &Text {
+                display: none;
+            }
+    
+            &Title {
+                font-weight: 200;
+                position: relative;
+                left: 17px;
+                font-size: 14px;
+                &::before {
+                    content: " ";
+                    height: 1px;
+                    width: 12px;
+                    top: 50%;
+                    left: -4px;
+                    transform: translate(-100%,-50%);
+                    position: absolute;
+                    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+                    ;
+                }
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width:450px) {
+        &__title{
+            font-size: 16px;
+        }
+    }
+}

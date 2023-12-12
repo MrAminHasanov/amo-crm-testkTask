@@ -1,0 +1,25 @@
+.logo {
+    width: 100%;
+
+    &__img {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 10px;
+        white-space: nowrap;
+        font-family: "Montserrat";
+        color: var(--lightGrey);
+        font-weight: 300;
+        user-select: none;
+        @media only screen and (max-width:900px) {
+            font-size: 8px;
+        }
+    }
+
+    
+    @media only screen and (max-width:660px) {
+        display: none;
+    }
+}

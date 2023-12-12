@@ -1,0 +1,56 @@
+.earnMore {
+    &__title {
+        word-wrap: break-word;
+        font-family: "inter";
+        font-size: 48px;
+        font-weight: 300;
+        color: var(--lightGrey);
+
+        &_orange {
+            font-weight: 700;
+            background: linear-gradient(to right, #FCB045, #FF3F78);
+            background-clip: text;
+            color: transparent
+        }
+    }
+
+    &__descript {
+        display: block;
+        margin-top: 20px;
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: var(--lightGrey);
+        font-weight: 400;
+    }
+
+    @media only screen and (max-width:900px) {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__descript {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width:660px) {
+        &__title {
+            font-size: 48px;
+        }
+
+        &__descript {
+            font-size: 20px;
+        }
+
+        padding-bottom: 20px;
+    }
+
+    @media only screen and (max-width:550px) {
+        &__title{
+            font-size: 36px;
+        }
+        &__descript{
+            font-size: 16px;
+        }
+    }
+}

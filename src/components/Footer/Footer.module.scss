@@ -1,0 +1,59 @@
+.footer {
+    display: grid;
+    grid-template-columns: 20% 38% 30%;
+    justify-content: space-between;
+    padding: 65px var(--bodyPadding);
+    grid-template-areas: "abouteList menuList contacts";
+
+    a {
+        font-size: 16px;
+        display: block;
+        padding-top: 8px;
+        font-family: "inter";
+        font-weight: 400;
+    }
+
+    @media only screen and (max-width:1100px) {
+        grid-template-columns: 15% 45% 30%;
+    }
+
+    @media only screen and (max-width:1000px) {
+        grid-template-columns: 40% 55%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "abouteList contacts"
+            "menuList menuList";
+        row-gap: 15px;
+    }
+
+    @media only screen and (max-width:660px) {
+        background-color: var(--bodyBackColor);
+    }
+
+    @media only screen and (max-width:580px) {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "abouteList"
+            "menuList"
+            "contacts";
+        row-gap: 60px;
+    }
+
+    @media only screen and (max-width:500px) {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.listHead {
+    color: #656566;
+    font-family: "inter";
+    font-weight: 600;
+    text-align: left;
+    font-size: 14px;
+    position: absolute;
+    transform: translateY(-25px);
+}

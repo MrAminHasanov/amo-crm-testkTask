@@ -1,0 +1,32 @@
+@import "../Footer.module.scss";
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-area: contacts;
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+    }
+
+    &__listHead {
+        @extend .listHead
+    }
+
+    li:not(li:first-child) {
+        padding-top: 8px;
+        font-family: "inter";
+        font-size: 16px;
+        color: var(--lightGrey);
+    }
+
+    @media only screen and (max-width:580px) {
+        align-items: flex-start;
+        li:not(li:first-child) {
+            font-size: 12px;
+        }
+    }
+}

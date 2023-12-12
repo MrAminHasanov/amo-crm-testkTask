@@ -1,0 +1,16 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px var(--bodyPadding) 80px;
+
+    @media only screen and (max-width:660px) {
+        padding: 70px var(--bodyPadding) 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media only screen and (max-width:550px) {
+        padding: 40px var(--bodyPadding) 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

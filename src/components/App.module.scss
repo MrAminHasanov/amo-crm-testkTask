@@ -1,0 +1,63 @@
+@import "@fontsource/montserrat/300.css";
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/inter/200.css";
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/900.css";
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0E1014;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(252, 176, 69);
+    background: linear-gradient(180deg, rgba(252, 176, 69, 1) 31%, rgba(255, 63, 120, 1) 96%);
+}
+
+.App {
+    --lightGrey: #E4E5EA;
+    --dargGrey: #656566;
+    --bodyPadding: 100px;
+    --bodyBackColor: #0E1014;
+    overflow-x: hidden;
+
+    @media only screen and (max-width:1200px) {
+        --bodyPadding: 70px;
+    }
+
+    @media only screen and (max-width:860px) {
+        --bodyPadding: 50px;
+    }
+
+    @media only screen and (max-width:660px) {
+        --bodyPadding: 30px;
+    }
+
+    @media only screen and (max-width:500px) {
+        --bodyPadding: 15px;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--lightGrey);
+    }
+}

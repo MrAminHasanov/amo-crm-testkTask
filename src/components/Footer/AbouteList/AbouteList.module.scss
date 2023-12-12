@@ -1,0 +1,10 @@
+@import "../Footer.module.scss";
+
+.abouteList {
+    width: 100%;
+    grid-area: abouteList;
+
+    &__listHead {
+        @extend .listHead
+    }
+}
