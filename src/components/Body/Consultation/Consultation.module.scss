@@ -20,9 +20,21 @@
         background-color: #4077F3;
         color: var(--lightGrey);
         border: none;
-        padding: 20px 40px;
+        padding: 16px 40px 20px;
         font-family: "inter";
         font-weight: 500;
+        transition: 0.7s ease color, 0.7s ease background-color, 0.7s ease border-color;
+        cursor: pointer;
+        border-top: 4px solid transparent;
+
+        &:hover {
+            background-color: white;
+            color: #4077F3;
+        }
+        &:active{
+            color: black;
+            border-color: #4077F3;
+        }
     }
 
     &__list {
@@ -103,7 +115,7 @@
     @media only screen and (max-width:660px) {
         text-align: left;
 
-        &__list{
+        &__list {
             width: 300px;
         }
 
@@ -115,19 +127,20 @@
             &Text {
                 display: none;
             }
-    
+
             &Title {
                 font-weight: 200;
                 position: relative;
                 left: 17px;
                 font-size: 14px;
+
                 &::before {
                     content: " ";
                     height: 1px;
                     width: 12px;
                     top: 50%;
                     left: -4px;
-                    transform: translate(-100%,-50%);
+                    transform: translate(-100%, -50%);
                     position: absolute;
                     background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
                     ;
@@ -141,7 +154,7 @@
     }
 
     @media only screen and (max-width:450px) {
-        &__title{
+        &__title {
             font-size: 16px;
         }
     }
