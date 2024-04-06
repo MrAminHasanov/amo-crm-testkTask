@@ -3,7 +3,7 @@ npm i
 npm start  
 
 //Описания проекта:  
-Тестовое задание для вакансии от компании [stakeWolle](https://hh.ru/employer/999442?hhtmFrom=vacancy). Ничего особенного простая верстка по макету на react. 
+Тестовое задание для вакансии от компании [amoCrm](https://hh.ru/employer/999442?hhtmFrom=vacancy). Ничего особенного простая верстка по макету на react. 
 
 //Стэк: React/Scss
 
