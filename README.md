@@ -7,4 +7,4 @@ npm start
 
 //Стэк: React/Scss
 
-//Сылка на дэплоймент  
+[//Сылка на дэплоймент](https://mraminhasanov.github.io/amo-crm-testkTask/)  
