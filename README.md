@@ -1,6 +1,6 @@
-//Project Initialization:
-npm i
-npm start
+//Project Initialization:  
+npm i  
+npm start  
 
 //Project Description:
 Test task for a vacancy from the company [amoCrm](https://hh.ru/employer/999442?hhtmFrom=vacancy). Nothing special, simple layout according to the design in React.
